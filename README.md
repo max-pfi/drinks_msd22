@@ -19,10 +19,10 @@ The code can be simply run by executing the main class in your Java development 
 ## Task List
 
 - [ ] **Branch `maven_detail` (Max)**
-  - [ ] Expand pom.xml file to include all necessary libraries or configurations to implement the entire task.
+  - [x] Expand pom.xml file to include all necessary libraries or configurations to implement the entire task.
   - [ ] Each group member should add their own developer information.
-  - [ ] One team member should add the address of the Git repository.
-  - [ ] Add the necessary dependencies.
+  - [x] One team member should add the address of the Git repository.
+  - [x] Add the necessary dependencies.
   
 - [ ] **Branch `bug_hunt` (Laurenz)**
   - [ ] Find and correct three errors in the existing code.
