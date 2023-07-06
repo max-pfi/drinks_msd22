@@ -36,9 +36,9 @@ The code can be simply run by executing the main class in your Java development 
 - [x] **Branch `javadoc` (Patrick)**
   - [x] Create JavaDoc comments for the already provided classes as well as the new classes.
 
-- [ ] **Branch `tests` (together)**
-  - [ ] Create tests for the existing as well as new classes.
-  - [ ] All test files should be named according to the following naming scheme.
+- [x] **Branch `tests` (together)**
+  - [x] Create tests for the existing as well as new classes.
+  - [x] All test files should be named according to the following naming scheme.
 
 - [x] **Branch `double_queue` (Max & Laurenz)**
   - [x] Create a Queue version that allows managing Double values in a queue - class name: DoubleQueue.
