@@ -1,36 +1,50 @@
 package at.fhj.msd;
 
 
-// fastly written (not really nice) comments you should adapt
+import java.util.NoSuchElementException;
+
+/**
+ * Represents a queue data structure for String objects.
+ */
 public interface IQueue {
-  /** 
-   * I am a really bad comment
-   * 
-   * fasdfadsffdsadsf
-   * 
-   * fdsasdfadsf
-   * 
-   *  add object to queue, true if okay 
-   * 
-   * i fell asleep on my keyboard...
-   * 
-   * */ 
+
+  /**
+   * Adds the given String to the end of the queue if it is not full.
+   *
+   * @param obj The String to add to the queue.
+   * @return true if the String was added successfully, false otherwise.
+   */
   public abstract boolean offer(String obj);
 
-  //returns + del 1st element; null if nothing in there
-   //
+  /**
+   * Retrieves and removes the first String of this queue, or returns null if this queue is empty.
+   *
+   * @return the first String of this queue, or null if this queue is empty.
+   */
   public abstract String poll();
 
-  /* 
-  same as poll, if there is nothing in there error NoSuchElementException
+  /**
+   * Retrieves and removes the first String of this queue.
+   * This method differs from poll only in that it throws an exception if this queue is empty.
+   *
+   * @return the first String of this queue.
+   * @throws NoSuchElementException if this queue is empty.
    */
   public abstract String remove();
 
-  // 1st element without dlete, otherwise null
-   
+  /**
+   * Retrieves, but does not remove, the first String of this queue, or returns null if this queue is empty.
+   *
+   * @return the first String of this queue, or null if this queue is empty.
+   */
   public abstract String peek();
 
-  // element is to peek what remove is to poll
-  
+  /**
+   * Retrieves, but does not remove, the first String of this queue.
+   * This method differs from peek only in that it throws an exception if this queue is empty.
+   *
+   * @return the first String of this queue.
+   * @throws NoSuchElementException if this queue is empty.
+   */
   public abstract String element();
 }
