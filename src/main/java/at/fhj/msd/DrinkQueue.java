@@ -22,6 +22,14 @@ public class DrinkQueue {
         }
     }
 
+    public Drink remove() {
+        Drink element = poll();
+        if (element == null) {
+            throw new NoSuchElementException("there's no element any more");
+        }
+        return element;
+    }
+
     public Drink poll() {
         if (elements.size() > 0) {
             Drink element = elements.get(0);
