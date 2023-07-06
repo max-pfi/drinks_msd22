@@ -1,0 +1,13 @@
+<project name="drinks_msd22">
+    <publishDate position="right"/>
+    <version position="left"/>
+    <body>
+        <menu name="Overview">
+            <item name="Introduction" href="index.html"/>
+            <item name="Laurenz Altendorfer" href="laurenz_altendorfer.html"/>
+            <item name="Patrick Foessl" href="patrick_foessl.html"/>
+            <item name="Max Pfisterer" href="max_pfisterer.html"/>
+        </menu>
+        <menu ref="reports"/>
+    </body>
+</project>
