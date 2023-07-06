@@ -24,8 +24,8 @@ The code can be simply run by executing the main class in your Java development 
   - [ ] One team member should add the address of the Git repository.
   - [ ] Add the necessary dependencies.
   
-- [ ] **Branch `bug_hunt` (Laurenz)**
-  - [ ] Find and correct three errors in the existing code.
+- [x] **Branch `bug_hunt` (Laurenz)**
+  - [x] Find and correct three errors in the existing code.
   
 - [ ] **Branch `drink` (Patrick)**
   - [ ] Create a class Cocktail that implements the Drink interface.
