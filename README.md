@@ -20,7 +20,7 @@ The code can be simply run by executing the main class in your Java development 
 
 - [ ] **Branch `maven_detail` (Max)**
   - [x] Expand pom.xml file to include all necessary libraries or configurations to implement the entire task.
-  - [ ] Each group member should add their own developer information.
+  - [x] Each group member should add their own developer information.
   - [x] One team member should add the address of the Git repository.
   - [x] Add the necessary dependencies.
   
