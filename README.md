@@ -33,15 +33,15 @@ The code can be simply run by executing the main class in your Java development 
 - [x] **Branch `queue` (together)**
   - [x] Create a class DrinkQueue that allows managing all drinks, classes that implement the Drink interface, in a queue.
 
-- [ ] **Branch `javadoc` (Patrick)**
-  - [ ] Create JavaDoc comments for the already provided classes as well as the new classes.
+- [x] **Branch `javadoc` (Patrick)**
+  - [x] Create JavaDoc comments for the already provided classes as well as the new classes.
 
 - [ ] **Branch `tests` (together)**
   - [ ] Create tests for the existing as well as new classes.
   - [ ] All test files should be named according to the following naming scheme.
 
-- [ ] **Branch `double_queue` (Max & Laurenz)**
-  - [ ] Create a Queue version that allows managing Double values in a queue - class name: DoubleQueue.
+- [x] **Branch `double_queue` (Max & Laurenz)**
+  - [x] Create a Queue version that allows managing Double values in a queue - class name: DoubleQueue.
 
 - [ ] **Branch `maven_site` (together)**
   - [ ] Create a maven site documentation.
