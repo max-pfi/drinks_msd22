@@ -33,8 +33,8 @@ The code can be simply run by executing the main class in your Java development 
 - [x] **Branch `queue` (together)**
   - [x] Create a class DrinkQueue that allows managing all drinks, classes that implement the Drink interface, in a queue.
 
-- [ ] **Branch `javadoc` (Patrick)**
-  - [ ] Create JavaDoc comments for the already provided classes as well as the new classes.
+- [x] **Branch `javadoc` (Patrick)**
+  - [x] Create JavaDoc comments for the already provided classes as well as the new classes.
 
 - [ ] **Branch `tests` (together)**
   - [ ] Create tests for the existing as well as new classes.
