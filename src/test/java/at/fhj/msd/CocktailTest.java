@@ -1,51 +1,62 @@
 package at.fhj.msd;
 
-import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
+import java.util.List;
 
 public class CocktailTest {
 
     private Cocktail cocktail;
-    private Liquid l1;
-    private Liquid l2;
+    private List<Liquid> ingredients;
 
     @BeforeEach
-    public void setUp() {
-        l1 = new Liquid("Rum", 0.04, 40);
-        l2 = new Liquid("Cola", 0.15, 0);
-        cocktail = new Cocktail("RumCola", Arrays.asList(l1, l2));
+    public void setup() {
+        Liquid l1 = new Liquid("Rum", 0.5, 40);
+        Liquid l2 = new Liquid("Cola", 1.5, 0);
+        ingredients = Arrays.asList(l1, l2);
+        cocktail = new Cocktail("Cuba Libre", ingredients);
     }
 
     @Test
     public void testGetVolume() {
-        // Expected volume is average of the volumes of the liquids
-        double expected = (l1.getVolume() + l2.getVolume()) / 2;
-        Assertions.assertEquals(expected, cocktail.getVolume());
+        assertEquals(1.0, cocktail.getVolume(), "Expected volume of the cocktail to be 1.0");
     }
 
     @Test
     public void testGetAlcoholPercent() {
-        // Expected alcohol percent is average of the alcohol percentages of the liquids
-        double expected = (l1.getAlcoholPercent() + l2.getAlcoholPercent()) / 2;
-        Assertions.assertEquals(expected, cocktail.getAlcoholPercent());
+        assertEquals(20, cocktail.getAlcoholPercent(), "Expected alcohol percent of the cocktail to be 20");
     }
 
     @Test
-    public void testIsAlcoholic() {
-        Assertions.assertTrue(cocktail.isAlcoholic());
+    public void testIsAlcoholicTrue() {
+        assertTrue(cocktail.isAlcoholic(), "Expected the cocktail to be alcoholic");
+    }
+
+    @Test
+    public void testIsAlcoholicFalse() {
+        Liquid l1 = new Liquid("Juice", 0.5, 0);
+        Liquid l2 = new Liquid("Water", 1.5, 0);
+        ingredients = Arrays.asList(l1, l2);
+        cocktail.setIngredients(ingredients);
+
+        assertFalse(cocktail.isAlcoholic(), "Expected the cocktail to be non-alcoholic");
     }
 
     @Test
     public void testGetIngredients() {
-        Assertions.assertEquals(Arrays.asList(l1, l2), cocktail.getIngredients());
+        assertEquals(ingredients, cocktail.getIngredients(), "Expected the same list of ingredients");
     }
 
     @Test
     public void testSetIngredients() {
-        Liquid l3 = new Liquid("Gin", 0.05, 40);
-        cocktail.setIngredients(Arrays.asList(l3));
-        Assertions.assertEquals(Arrays.asList(l3), cocktail.getIngredients());
+        Liquid l1 = new Liquid("Gin", 0.5, 37.5);
+        Liquid l2 = new Liquid("Tonic Water", 1.5, 0);
+        List<Liquid> newIngredients = Arrays.asList(l1, l2);
+        cocktail.setIngredients(newIngredients);
+
+        assertEquals(newIngredients, cocktail.getIngredients(), "Expected the new list of ingredients");
     }
 }
