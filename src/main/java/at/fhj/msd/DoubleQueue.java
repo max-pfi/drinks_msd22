@@ -2,7 +2,6 @@ package at.fhj.msd;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 public class DoubleQueue {
     private List<Double> elements = new ArrayList<>();
