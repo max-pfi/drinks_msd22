@@ -24,6 +24,20 @@
                 <picUrl>https://avatars.githubusercontent.com/u/98466945?v=4</picUrl>
             </properties>
         </developer>
+        <developer>
+            <id>laurenzaltendorfer</id>
+            <name>Laurenz Altendorfer</name>
+            <email>laurenz.altendorfer@edu.fh-joanneum.at</email>
+            <organization>FH JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fh-joanneum.at/mobile-software-development/bachelor/</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+            <properties>
+                <picUrl>https://avatars.githubusercontent.com/u/132833309?v=4</picUrl>
+            </properties>
+        </developer>
     </developers>
 
     <properties>
