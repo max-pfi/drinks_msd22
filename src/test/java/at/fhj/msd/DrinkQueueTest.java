@@ -1,6 +1,6 @@
 /**
- * This is a Test class for the Drink class.
- * It provides a set of test cases to check the behavior of methods of the Drink class.
+ * This is a Test class for the DrinkQueue class.
+ * It provides a set of test cases to check the behavior of methods of the DrinkQueue class.
  *
  * @author Patrick Fössl
  */
@@ -84,7 +84,7 @@ public class DrinkQueueTest {
 
     /**
      * Tests the element() method of the DrinkQueue class.
-     * Asserts that calling element() on an empty queue throws a NoSuchElementException.
+     * Asserts that calling element() on an empty queue throws aNoSuchElementException.
      * Adds drinks to the queue and asserts that calling element() returns the first drink without removing it.
      */
     @Test

@@ -3,6 +3,11 @@
  The StringQueue class represents a queue implementation that stores strings.
  It implements the IQueue interface and provides methods for adding and removing elements from the queue.
  This class also includes bug fixes and improvements.
+
+ * @author
+ *     Patrick Fössl
+ *     Max Pfisterer
+ *     Laurenz Altendorfer
  */
 package at.fhj.msd;
 import java.util.ArrayList;
@@ -10,31 +15,26 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 /**
-
- The StringQueue class represents a queue implementation that stores strings.
-
- It implements the IQueue interface and provides methods for adding and removing elements from the queue.
-
- This class also includes bug fixes and improvements.
+ * The StringQueue class represents a queue implementation that stores strings.
+ * It implements the IQueue interface and provides methods for adding and removing elements from the queue.
+ * This class also includes bug fixes and improvements.
  */
 public class StringQueue implements IQueue {
   private List<String> elements = new ArrayList<String>();
   private int maxSize;
 
   /**
-
-   Creates a StringQueue object with the specified maximum size.
-   @param maxSize the maximum size of the queue
+   *  Creates a StringQueue object with the specified maximum size.
+   *  @param maxSize the maximum size of the queue
    */
 
   public StringQueue(int maxSize) {
     this.maxSize = maxSize;
   }
   /**
-
-   Adds a string to the queue.
-   @param obj the string to be added to the queue
-   @return true if the string was added successfully, false if the queue is full
+   *  Adds a string to the queue.
+   *  @param obj the string to be added to the queue
+   *  @return true if the string was added successfully, false if the queue is full
    */
   @Override
   public boolean offer(String obj) {
@@ -46,10 +46,9 @@ public class StringQueue implements IQueue {
     }
   }
   /**
-
-   Retrieves and removes the first string from the queue.
-
-   @return the first string from the queue, or null if the queue is empty
+   *  Retrieves and removes the first string from the queue.
+   *
+   *  @return the first string from the queue, or null if the queue is empty
    */
   @Override
   public String poll() {
@@ -63,12 +62,9 @@ public class StringQueue implements IQueue {
   }
 
   /**
-
-   Retrieves and removes the first string from the queue.
-
-   @return the first string from the queue
-
-   @throws NoSuchElementException if the queue is empty
+   *  Retrieves and removes the first string from the queue.
+   *  @return the first string from the queue
+   *  @throws NoSuchElementException if the queue is empty
    */
   @Override
   public String remove() {
@@ -81,9 +77,9 @@ public class StringQueue implements IQueue {
   }
 
   /**
-
-   Retrieves, but does not remove, the first string from the queue.
-   @return the first string from the queue, or null if the queue is empty
+   *  Retrieves, but does not remove, the first string from the queue.
+   *
+   *  @return the first string from the queue, or null if the queue is empty
    */
   @Override
   public String peek() {
@@ -94,12 +90,10 @@ public class StringQueue implements IQueue {
     }
   }
   /**
-
-   Retrieves, but does not remove, the first string from the queue.
-
-   @return the first string from the queue
-
-   @throws NoSuchElementException if the queue is empty
+   *  Retrieves, but does not remove, the first string from the queue.
+   *
+   *  @return the first string from the queue
+   *  @throws NoSuchElementException if the queue is empty
    */
   @Override
   public String element() {

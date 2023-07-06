@@ -1,16 +1,14 @@
 package at.fhj.msd;
 /**
- * Class represents a simple drink liquid which can be used in
- * drinks
+ * Class represents a simple drink with one liquid
  */
 public class SimpleDrink extends Drink{
     /**
-     * uses only one liquid
+     * a member of the liquid class including volume and percentage of alcohol
      */
     protected Liquid l;
     /**
-     * Creates a SimpleDrink object with given age and
-     * liquid
+     * Creates a SimpleDrink object with the given liquid
      *
      * @param name name of drink
      * @param l only liquid in drink
