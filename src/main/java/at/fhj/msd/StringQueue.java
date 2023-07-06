@@ -26,6 +26,7 @@ public class StringQueue implements IQueue {
    Creates a StringQueue object with the specified maximum size.
    @param maxSize the maximum size of the queue
    */
+
   public StringQueue(int maxSize) {
     this.maxSize = maxSize;
   }
@@ -52,13 +53,13 @@ public class StringQueue implements IQueue {
    */
   @Override
   public String poll() {
-    String element = peek();
-
     if (elements.size() > 0) {
+      String element = elements.get(0);
       elements.remove(0);
+      return element;
+    } else {
+      return null;
     }
-
-    return element;
   }
 
   /**
@@ -74,9 +75,8 @@ public class StringQueue implements IQueue {
     String element = poll();
 
     if (element == null) {
-      throw new NoSuchElementException("There is no element in the queue");
+      throw new NoSuchElementException("there's no element any more");
     }
-
     return element;
   }
 
@@ -106,7 +106,7 @@ public class StringQueue implements IQueue {
     String element = peek();
 
     if (element == null) {
-      throw new NoSuchElementException("There is no element in the queue");
+      throw new NoSuchElementException("there's no element any more");
     }
 
     return element;

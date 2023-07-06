@@ -18,11 +18,11 @@ The code can be simply run by executing the main class in your Java development 
 
 ## Task List
 
-- [ ] **Branch `maven_detail` (Max)**
-  - [ ] Expand pom.xml file to include all necessary libraries or configurations to implement the entire task.
-  - [ ] Each group member should add their own developer information.
-  - [ ] One team member should add the address of the Git repository.
-  - [ ] Add the necessary dependencies.
+- [x] **Branch `maven_detail` (Max)**
+  - [x] Expand pom.xml file to include all necessary libraries or configurations to implement the entire task.
+  - [x] Each group member should add their own developer information.
+  - [x] One team member should add the address of the Git repository.
+  - [x] Add the necessary dependencies.
   
 - [x] **Branch `bug_hunt` (Laurenz)**
   - [x] Find and correct three errors in the existing code.
@@ -30,8 +30,8 @@ The code can be simply run by executing the main class in your Java development 
 - [x] **Branch `drink` (Patrick)**
   - [x] Create a class Cocktail that implements the Drink interface.
   - [x] The Cocktail can consist of any number of ingredients - your cocktail should consist of any number of Liquid objects.
-- [ ] **Branch `queue` (together)**
-  - [ ] Create a class DrinkQueue that allows managing all drinks, classes that implement the Drink interface, in a queue.
+- [x] **Branch `queue` (together)**
+  - [x] Create a class DrinkQueue that allows managing all drinks, classes that implement the Drink interface, in a queue.
 
 - [ ] **Branch `javadoc` (Patrick)**
   - [ ] Create JavaDoc comments for the already provided classes as well as the new classes.
