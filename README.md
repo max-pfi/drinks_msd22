@@ -36,13 +36,13 @@ The code can be simply run by executing the main class in your Java development 
 - [x] **Branch `javadoc` (Patrick)**
   - [x] Create JavaDoc comments for the already provided classes as well as the new classes.
 
-- [ ] **Branch `tests` (together)**
-  - [ ] Create tests for the existing as well as new classes.
-  - [ ] All test files should be named according to the following naming scheme.
+- [x] **Branch `tests` (together)**
+  - [x] Create tests for the existing as well as new classes.
+  - [x] All test files should be named according to the following naming scheme.
 
 - [x] **Branch `double_queue` (Max & Laurenz)**
   - [x] Create a Queue version that allows managing Double values in a queue - class name: DoubleQueue.
 
-- [ ] **Branch `maven_site` (together)**
-  - [ ] Create a maven site documentation.
-  - [ ] Each team member should add an additional markdown file that is linked on the main page of the maven site documentation.
+- [x] **Branch `maven_site` (together)**
+  - [x] Create a maven site documentation.
+  - [x] Each team member should add an additional markdown file that is linked on the main page of the maven site documentation.
