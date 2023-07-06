@@ -1,3 +1,9 @@
+/**
+ * This is a Test class for the Liquid class.
+ * It provides a set of test cases to check the behavior of methods of the Liquid class.
+ *
+ * @author Laurenz Altendorfer
+ */
 package at.fhj.msd;
 
 import static org.junit.jupiter.api.Assertions.*;

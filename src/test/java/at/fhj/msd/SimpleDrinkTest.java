@@ -1,3 +1,9 @@
+/**
+ * This is a Test class for the SimpleDrink class.
+ * It provides a set of test cases to check the behavior of methods of the SimpleDrink class.
+ *
+ * @author Max Pfisterer
+ */
 package at.fhj.msd;
 
 import org.junit.jupiter.api.Assertions;

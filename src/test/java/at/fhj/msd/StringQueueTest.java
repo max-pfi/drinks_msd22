@@ -1,3 +1,9 @@
+/**
+ * Test class for StringQueue class.
+ * This class provides the test cases to check the methods of the StringQueue class.
+ *
+ * @author Max Pfisterer
+ */
 package at.fhj.msd;
 
 import org.junit.jupiter.api.Assertions;
@@ -11,11 +17,19 @@ public class StringQueueTest {
 
     private StringQueue stringQueue;
 
+    /**
+     * Method to set up the test environment.
+     * Initializes the StringQueue object.
+     */
     @BeforeEach
     public void setup() {
         stringQueue = new StringQueue(3);
     }
 
+    /**
+     * Test case for offer method when the queue is not full.
+     * Checks if the method returns true when adding elements to the queue unitl its full.
+     */
     @DisplayName("Test offer method, filling queue to max size")
     @Test
     public void testOffer() {
@@ -24,6 +38,10 @@ public class StringQueueTest {
         Assertions.assertTrue(stringQueue.offer("String3"));
     }
 
+    /**
+     * Test case for offer method when the queue is full
+     * Checks if the method returns false when trying to add an element to a full queue.
+     */
     @DisplayName("Test offer when queue is full")
     @Test
     public void testOfferOverflow() {
@@ -33,6 +51,10 @@ public class StringQueueTest {
         Assertions.assertFalse(stringQueue.offer("String4"));
     }
 
+    /**
+     * Test case for poll method when the queue is not empty.
+     * Checks if the method return the head of the queue and removes it.
+     */
     @DisplayName("Test poll with elements in queue")
     @Test
     public void testPoll() {
@@ -42,12 +64,20 @@ public class StringQueueTest {
 
     }
 
+    /**
+     * Test case for poll method when the queue is empty.
+     * Checks if the method returns null when the queue is empty.
+     */
     @DisplayName("Test poll with empty queue")
     @Test
     public void testPollEmptyQueue() {
         Assertions.assertNull(stringQueue.poll());
     }
 
+    /**
+     * Test case for remove method when the queue is not empty.
+     * Checks if the method returns the head of the queue and removes it.
+     */
     @DisplayName("Test remove with object in queue")
     @Test
     public void testRemove() {
@@ -57,12 +87,20 @@ public class StringQueueTest {
 
     }
 
+    /**
+     * Test case for remove method when the queue is empty.
+     * Checks if the method throws NoSuchElementException when the queue is empty.
+     */
     @DisplayName("Test remove with empty queue")
     @Test
     public void testRemoveFromEmptyQueue() {
         Assertions.assertThrows(NoSuchElementException.class,() -> stringQueue.remove());
     }
 
+    /**
+     * Test case for peek method when the queue is not empty.
+     * Checks if the method returns the head of the queue without removing it.
+     */
     @DisplayName("Test Peek with element in queue")
     @Test
     public void testPeek() {
@@ -72,13 +110,20 @@ public class StringQueueTest {
         Assertions.assertEquals(obj, stringQueue.peek());
     }
 
+    /**
+     * Test case for peek method when the queue is empty.
+     * Checks if the method returns null when the queue is empty.
+     */
     @DisplayName("Test Peek with empty queue")
     @Test
     public void testPeekEmptyQueue() {
         Assertions.assertNull(stringQueue.peek());
     }
 
-
+    /**
+     * Test case for element method when the queue is not empty.
+     * Checks if the method returns the head of the queue without removing it.
+     */
     @DisplayName("Test element with elements in queue")
     @Test
     public void testElement() {
@@ -89,6 +134,10 @@ public class StringQueueTest {
 
     }
 
+    /**
+     * Test case for the element method when the queue is empty.
+     * Checks if the method throws NoSuchElementException when the queue is empty.
+     */
     @DisplayName("Test element with empty queue")
     @Test
     public void testElementWithEmptyQueue() {

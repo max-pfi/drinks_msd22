@@ -1,3 +1,9 @@
+/**
+ * This is a Test class for the Drink class.
+ * It provides a set of test cases to check the behavior of methods of the Drink class.
+ *
+ * @author Patrick Fössl
+ */
 package at.fhj.msd;
 
 import static org.junit.jupiter.api.Assertions.*;

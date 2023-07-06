@@ -1,3 +1,9 @@
+/**
+ * This is a Test class for the Drink class.
+ * It provides a set of test cases to check the behavior of methods of the Drink class.
+ *
+ * @author Patrick Fössl
+ */
 package at.fhj.msd;
 
 import org.junit.jupiter.api.Assertions;
@@ -34,3 +40,4 @@ public class DrinkTest {
         drink.setName("Fruit Punch");
         Assertions.assertEquals("Fruit Punch", drink.getName());
     }
+}
