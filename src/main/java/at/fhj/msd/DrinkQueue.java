@@ -12,6 +12,25 @@ public class DrinkQueue {
         this.maxSize = maxSize;
     }
 
+    public boolean offer(Drink obj) {
+        if (elements.size() < maxSize) {
+            elements.add(obj);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Drink poll() {
+        if (elements.size() > 0) {
+            Drink element = elements.get(0);
+            elements.remove(0);
+            return element;
+        } else {
+            return null;
+        }
+    }
+
     public Drink peek() {
         if (elements.size() > 0) {
             return elements.get(0);
