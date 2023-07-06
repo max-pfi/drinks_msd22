@@ -40,8 +40,8 @@ The code can be simply run by executing the main class in your Java development 
   - [ ] Create tests for the existing as well as new classes.
   - [ ] All test files should be named according to the following naming scheme.
 
-- [ ] **Branch `double_queue` (Max & Laurenz)**
-  - [ ] Create a Queue version that allows managing Double values in a queue - class name: DoubleQueue.
+- [x] **Branch `double_queue` (Max & Laurenz)**
+  - [x] Create a Queue version that allows managing Double values in a queue - class name: DoubleQueue.
 
 - [ ] **Branch `maven_site` (together)**
   - [ ] Create a maven site documentation.

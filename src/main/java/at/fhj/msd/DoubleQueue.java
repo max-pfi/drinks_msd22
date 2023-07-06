@@ -46,4 +46,12 @@ public class DoubleQueue {
         }
         return element;
     }
+
+    public Double remove() {
+        Double element = poll();
+        if (element == null) {
+            throw new NoSuchElementException("there's no element any more");
+        }
+        return element;
+    }
 }
